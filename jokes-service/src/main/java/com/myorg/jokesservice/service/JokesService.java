@@ -44,8 +44,6 @@ public class JokesService {
             responseBody.setResponseMessage("Success");
             responseBody.setJoke(joke);
 
-            return responseBody;
-
         } catch (IOException e) {
             joke.setJoke(null);
             joke.setStatus(500);
