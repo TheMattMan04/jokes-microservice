@@ -42,14 +42,14 @@ public class JokesService {
             joke = gson.fromJson(responseString, JokeBody.class);
 
             responseBody.setResponseMessage("Success");
-            responseBody.setJoke(joke);
+            responseBody.setResponse(joke);
 
         } catch (IOException e) {
             joke.setJoke(null);
             joke.setStatus(500);
 
             responseBody.setResponseMessage("Error getting response: " + '\n' + e.getMessage());
-            responseBody.setJoke(joke);
+            responseBody.setResponse(joke);
         }
 
         return responseBody;

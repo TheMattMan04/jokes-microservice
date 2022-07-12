@@ -6,5 +6,5 @@ import lombok.Data;
 public class ResponseBody {
 
     private String responseMessage;
-    private JokeBody joke;
+    private JokeBody response;
 }
